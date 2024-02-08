@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Design</title>
+  </head>
+  <body>
+   <div class="container-fluid bg-dark text-light py-3">
+       <header class="text-center">
+           <h1 class="display-6">Bank Loan Application Form</h1>
+       </header>
+   </div>
+   <section class="container my-2 bg-dark w-50 text-light p-2">
+    <form  action="confirm.html" class="row g-4 p-3">
+        <div class="col-md-4">
+            <label for="validationDefault01" class="form-label">First name</label>
+            <input type="text" class="form-control" id="validationDefault01" placeholder="Enter first name" required>
+          </div>
+          <div class="col-md-4">
+            <label for="validationDefault02" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="validationDefault02" placeholder="Enter last name"  required>
+          </div>
+
+        <div class="col-md-4">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Enter email">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPAN" class="form-label">PAN</label>
+          <input type="text" class="form-control" id="inputPAN">
+        </div>
+    
+        <div class="col-md-6">
+          <label for="inputAmount" class="form-label">Enter loan Amount</label>
+          <input type="number" class="form-control" id="inputAmount" value="">
+        </div>
+        <div class="col-md-4">
+          <label for="inputYear" class="form-label">Loan Tenure(Year)</label>
+          <input type="number" class="form-control" id="inputYear">
+        </div>
+
+        <div class="total"></div>
+        
+        <div class="col-12">
+            <button type="button" class="btn btn-success" onclick="calculate()">Calculate EMI</button>
+          </div>
+          
+          <div id="estimatedEmi" class="col-12">
+            <span type="number" id="total"></span>
+          </div>
+
+        <div class="col-12">
+          <button type="submit"  class="btn btn-success">Submit</button>
+        </div>
+        
+      </form>
+   </section>
+
+   <script src="app.js"></script>
+  </body>
+</html>
+             
+                

@@ -1,0 +1,17 @@
+*{
+     box-sizing:  border-box;
+     margin: 0;
+     padding: 0;
+
+}
+body{
+    background: url(https://img.freepik.com/free-photo/solid-concrete-wall-textured-backdrop_53876-129493.jpg?w=996&t=st=1707156415~exp=1707157015~hmac=fa26b676b2712dc28decac19dad30bb59b421152e7cc922ccff45183924491d7);
+
+}
+form{
+    box-shadow: 2px 6px 100px #ffff;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
